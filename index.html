@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2> Introduction to JavaScript</h2>
+    <!--Dropdown-->
+    <label>Select a color:</label>
+    <select id="colorselect">
+        <option value="">Choose</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+    </select>
+    <!--Model-->
+    <button onclick="openModel()">Open Modal
+    </button>
+    <div id="myModal" style="display:none;">
+        <h3>Hello , I am Mim Akter</h3>
+        <p>This is a modal</p>
+        <button onclick="closeModel()">Close</button>
+    </div>
+<!--form-->
+<form onsubmit="return validateForm()">
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email"placeholder="Enter Email">
+    <button type="submit">submit</button>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
